@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Python Program - misc</title>
+
+    <link rel="stylesheet" href="https://rubesh-skr.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://rubesh-skr.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://rubesh-skr.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://rubesh-skr.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://rubesh-skr.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://rubesh-skr.github.io/pynotes">Python Program</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+        
+        
+
+
+            <article>
+                <a href="https://rubesh-skr.github.io/pynotes/secondlargestnumber.html"><h3 class="article-title">Secondlargestnumber</h3></a>
+<h6 class="subheader" title="2026-04-28T00:00:00-04:00">Tue 28 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">factorial</span><span class="p">():</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter number: &quot;</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid&quot;</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="n">fact</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">num</span><span class="p">:</span>
+        <span class="n">fact</span> <span class="o">*=</span> <span class="n">i</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Factorial:&quot;</span><span class="p">,</span> <span class="n">fact</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">1.Find 2.Again 3.Skip 4.Exit&quot;</span><span class="p">)</span>
+    <span class="n">ch</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Choice: &quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">ch</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span><span class="p">:</span>
+        <span class="n">factorial</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">ch</span> <span class="o">==</span> <span class="s2">&quot;2&quot;</span><span class="p">:</span>
+        <span class="n">factorial …</span></code></pre></div><p class="subheader">Category: <a href="https://rubesh-skr.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://rubesh-skr.github.io/pynotes/secondlargestnumber.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://rubesh-skr.github.io/pynotes/simple-menu-based-system.html"><h3 class="article-title">Simple Menu Based System</h3></a>
+<h6 class="subheader" title="2026-04-28T00:00:00-04:00">Tue 28 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">count_digits</span><span class="p">():</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter number: &quot;</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Digits: 1&quot;</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">num</span>
+
+    <span class="k">while</span> <span class="n">temp</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">//</span> <span class="mi">10</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number:&quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Digits count:&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">1.Count 2.Again 3.Skip 4.Exit&quot;</span><span class="p">)</span>
+    <span class="n">ch</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Choice: &quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">ch …</span></code></pre></div><p class="subheader">Category: <a href="https://rubesh-skr.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://rubesh-skr.github.io/pynotes/simple-menu-based-system.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://rubesh-skr.github.io/pynotes/student-grade-system.html"><h3 class="article-title">Student Grade System</h3></a>
+<h6 class="subheader" title="2026-04-28T00:00:00-04:00">Tue 28 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">students</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">add_student</span><span class="p">():</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter name: &quot;</span><span class="p">)</span>
+    <span class="n">marks</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter number of subjects: &quot;</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Enter mark </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: &quot;</span><span class="p">))</span>
+        <span class="n">marks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+
+    <span class="n">students</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">marks</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Student added!&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">view_students</span><span class="p">():</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">students</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No data available&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">name …</span></code></pre></div><p class="subheader">Category: <a href="https://rubesh-skr.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://rubesh-skr.github.io/pynotes/student-grade-system.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://rubesh-skr.github.io/pynotes/sum-of-array.html"><h3 class="article-title">Sum Of Array</h3></a>
+<h6 class="subheader" title="2026-04-28T00:00:00-04:00">Tue 28 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">count_words</span><span class="p">():</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter sentence: &quot;</span><span class="p">)</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Word count:&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">1.Count 2.Again 3.Skip 4.Exit&quot;</span><span class="p">)</span>
+    <span class="n">ch</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Choice: &quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">ch</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span> <span class="ow">or</span> <span class="n">ch</span> <span class="o">==</span> <span class="s2">&quot;2&quot;</span><span class="p">:</span>
+        <span class="n">count_words</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">ch</span> <span class="o">==</span> <span class="s2">&quot;3&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Skip&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">ch …</span></code></pre></div><p class="subheader">Category: <a href="https://rubesh-skr.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://rubesh-skr.github.io/pynotes/sum-of-array.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://rubesh-skr.github.io/pynotes/untitled.html"><h3 class="article-title">Untitled</h3></a>
+<h6 class="subheader" title="2026-04-28T00:00:00-04:00">Tue 28 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">count_words</span><span class="p">():</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter sentence: &quot;</span><span class="p">)</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Word count:&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">1.Count 2.Again 3.Skip 4.Exit&quot;</span><span class="p">)</span>
+    <span class="n">ch</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Choice: &quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">ch</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span> <span class="ow">or</span> <span class="n">ch</span> <span class="o">==</span> <span class="s2">&quot;2&quot;</span><span class="p">:</span>
+        <span class="n">count_words</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">ch</span> <span class="o">==</span> <span class="s2">&quot;3&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Skip&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">ch …</span></code></pre></div><p class="subheader">Category: <a href="https://rubesh-skr.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://rubesh-skr.github.io/pynotes/untitled.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://rubesh-skr.github.io/pynotes/wordscount.html"><h3 class="article-title">Wordscount</h3></a>
+<h6 class="subheader" title="2026-04-28T00:00:00-04:00">Tue 28 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">count_words</span><span class="p">():</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter sentence: &quot;</span><span class="p">)</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Word count:&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">1.Count 2.Again 3.Skip 4.Exit&quot;</span><span class="p">)</span>
+    <span class="n">ch</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Choice: &quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">ch</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span> <span class="ow">or</span> <span class="n">ch</span> <span class="o">==</span> <span class="s2">&quot;2&quot;</span><span class="p">:</span>
+        <span class="n">count_words</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">ch</span> <span class="o">==</span> <span class="s2">&quot;3&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Skip&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">ch …</span></code></pre></div><p class="subheader">Category: <a href="https://rubesh-skr.github.io/pynotes/category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://rubesh-skr.github.io/pynotes/wordscount.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+            <!-- /#posts-list -->
+<div class="pagination-centered">
+<h6 class="subheader">Page 5 of 5</h6>
+
+<p>
+            <a href="https://rubesh-skr.github.io/pynotes/category/misc4.html">&laquo; Prev</a>
+
+</p>
+</div>
+
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://rubesh-skr.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://rubesh-skr.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://rubesh-skr.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://rubesh-skr.github.io/pynotes/category/misc.html">misc</a></li>
+            <li><a href="https://rubesh-skr.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/rubesh-skr">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/rubesh-sivaprakasam/">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>Python Program by Rubesh </p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
